@@ -2,17 +2,17 @@ package my_practice;
 
 public class GetMethodsHomework {
     public static void main(String[] args) {
-         /*
-        Yeni bir package olusturalim : day01
-Yeni bir class olusturalim : C03_GetMethods
-Amazon sayfasina gidelim. https://www.amazon.com/
-Sayfa basligini(title) yazdirin
-Sayfa basliginin "Amazon" icerdigini test edin
-Sayfa adresini(url) yazdirin
-Sayfa url'inin "amazon" icerdigini test edin.
-Sayfa handle degerini yazdirin
-Sayfa HTML kodlarinda "Gateway" kelimesi gectigini test edin
-Sayfayi kapatin.
+                 /*
+                Yeni bir package olusturalim : day01
+         Yeni bir class olusturalim : C03_GetMethods
+         Amazon sayfasina gidelim. https://www.amazon.com/
+         Sayfa basligini(title) yazdirin
+         Sayfa basliginin "Amazon" icerdigini test edin
+         Sayfa adresini(url) yazdirin
+         Sayfa url'inin "amazon" icerdigini test edin.
+         Sayfa handle degerini yazdirin
+         Sayfa HTML kodlarinda "Gateway" kelimesi gectigini test edin
+         Sayfayi kapatin.
 
 
         1.Yeni bir Class olusturalim.C06_ManageWindow

@@ -17,8 +17,6 @@ public class C01_getTagNameGetAttribute {
         webElement.getTagName( ); Web elementin tag ismini getirir.
                 Bir HTML koduna inspect ile baktik. Tag name'nin input oldugunu gorduk. getTagName() bize
         input'u verir.
-
-
         webElement.getAttribute("Att.ismi" ); Ismi girilen attribute'un degerini getirir.
         Ayni HTML koduna baktik ve id olan attribute'u gorduk. Bu id attribute'i getAttribute() parantezi
         icine yazarsak bize value'su olan twotabsearchtextbox'i verir.
@@ -32,6 +30,7 @@ public class C01_getTagNameGetAttribute {
         WebElement aramaKutusu =driver.findElement(By.id("twotabsearchtextbox"));
 
         //Arama kutusunun tagName'inin input oldugunu test edin
+   //*****String ifadelerin dogrulugunu test etmek icin equals(expectedTagName) kullanilir
         String actualTagName =aramaKutusu.getTagName();
         String expectedTagName="input";
         if (actualTagName.equals(expectedTagName)){
@@ -41,16 +40,16 @@ public class C01_getTagNameGetAttribute {
         }
 
         //arama kutusunun  name attribute'nun degerinin "field-keywords" oldugunu test edin
-        String actualAttribute =aramaKutusu.getAttribute("name");
+        String  actualAttribute = aramaKutusu.getAttribute("field-keywords" );
         String expectedAttribute ="field-keywords";
-        if (actualAttribute.equals(expectedAttribute)){
-            System.out.println("Test PASSED");
-        }else{
-            System.out.println("Test FAILED");
-        }
+       if (actualAttribute.equals(expectedAttribute)){
+           System.out.println("TEST PASSED");
+       }else {
+           System.out.println("TEST FAILED");
+       }
 
-        //sayfayi kapatin
-        driver.close();
+                //sayfayi kapatin
+                   driver.close();
     }
 
 }
